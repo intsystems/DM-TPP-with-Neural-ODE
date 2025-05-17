@@ -15,16 +15,17 @@
 
 .. class:: center
 
-    :Название исследуемой задачи: Мое название работы
-    :Тип научной работы: M1P/НИР/CoIS
-    :Автор: Имя Отчество Фамилия
-    :Научный руководитель: степень, Фамилия Имя Отчество
-    :Научный консультант(при наличии): степень, Фамилия Имя Отчество
+    :Название исследуемой задачи: Математическое разложение оценки неопределенности для нейронных сетей
+    :Тип научной работы: НИР
+    :Автор: Руслан Рашидович Насыров
+    :Научный руководитель: к.ф.-м.н., Алексей Алексеевич Зайцев
 
 Abstract
 ========
 
-Purus sit amet luctus venenatis lectus magna fringilla. Condimentum id venenatis a condimentum vitae sapien. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Eget egestas purus viverra accumsan in. Nam aliquam sem et tortor. Donec et odio pellentesque diam volutpat commodo. Odio pellentesque diam volutpat commodo sed egestas. Sit amet dictum sit amet justo. Pellentesque sit amet porttitor eget. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Quis varius quam quisque id diam vel quam elementum. Ornare lectus sit amet est placerat in. Vulputate dignissim suspendisse in est ante. Elit sed vulputate mi sit amet mauris. Egestas sed tempus urna et pharetra pharetra. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.
+Many real-world sequential datasets are irregularly sampled and characterized by a mixture of numerical and categorical features. Such event sequences are critical in domains like healthcare, physics, social media, and finance, where observations arrive continuously over time. Traditional approaches—most notably recurrent neural networks (RNNs)—often discretize time by binning or imputing timestamps, thereby neglecting the underlying continuous dynamics or discarding valuable temporal information. Neural Ordinary Differential Equations (Neural ODEs) offer a principled framework for modeling data in continuous time.
+
+In this thesis, we focus on the unsupervised task of learning embeddings for a marked point process, where each event is assigned a discrete label. We extend the methodology first proposed by~\cite{DM_TPP} in two key ways. First, we replace simple aggregation schemes with a Transformer-based module to capture long-range dependencies more effectively. Second, we introduce a decoupled architecture in which events of each type are processed by separate Neural Controlled Differential Equation (Neural CDE) systems. This design allows the model to accumulate influence at the level of event types—rather than treating every occurrence in isolation—thereby enhancing both representational capacity and interpretability.
 
 Research publications
 ===============================
